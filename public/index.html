@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>MediFinder</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>MediFinder</h1>
+
+  <section id="places-section">
+    <h2>Find nearby clinics & hospitals</h2>
+    <div>
+      <label>Latitude: <input id="lat" /></label>
+      <label>Longitude: <input id="lon" /></label>
+      <button id="use-location">Use my location</button>
+      <button id="search-places">Search</button>
+    </div>
+    <div id="places-result"></div>
+  </section>
+
+  <hr/>
+
+  <section id="drug-section">
+    <h2>Search medication info</h2>
+    <input id="drugName" placeholder="Enter drug name (e.g., ibuprofen)" />
+    <button id="searchDrug">Search drug</button>
+    <pre id="drugResult"></pre>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
